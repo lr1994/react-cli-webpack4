@@ -25,6 +25,7 @@ const copy = (src,dst) =>{
                 if(st.isFile()){
                     readable = fs.createReadStream(_src);//创建读取流
                     writable = fs.createWriteStream(_dst);//创建写入流
+                    readable.pipe(writable);
                 }else if(st.isDirectory()){
                     exists(_src,_dst,copy);
                 }
