@@ -1,8 +1,10 @@
+#!/usr/bin/env node
 const fs = require('fs');
 const path = require('path');
 const srcpath = path.resolve(__dirname,'./source');
 const res = process.argv[2];
-const distpath = path.resolve(__dirname,'./'+res );
+const distpath = path.resolve(res);
+const appName = path.basename(distpath);
 const stat = fs.stat;
 
 const copy = (src,dst) =>{
@@ -42,4 +44,5 @@ const exists = (src,dst,callback)=>{
         }
     });
 }
-exists(srcpath,distpath,copy);
+
+exists(srcpath,appName,copy);
