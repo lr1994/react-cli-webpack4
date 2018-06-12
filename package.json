@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/lr1994/react-cli-webpack4.git"
   },
-  "bin":{
-    "react-cli-webpack4":"./copy.js"
+  "bin": {
+    "react-cli-webpack": "./copy.js"
   },
   "keywords": [
     "react",
@@ -23,5 +23,6 @@
   "bugs": {
     "url": "https://github.com/lr1994/react-cli-webpack4/issues"
   },
-  "homepage": "https://github.com/lr1994/react-cli-webpack4#readme"
+  "homepage": "https://github.com/lr1994/react-cli-webpack4#readme",
+  "dependencies": {}
 }
