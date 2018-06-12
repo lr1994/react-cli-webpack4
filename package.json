@@ -1,6 +1,6 @@
 {
   "name": "react-cli-webpack4",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "auto create react-webpack config",
   "main": "'",
   "scripts": {
